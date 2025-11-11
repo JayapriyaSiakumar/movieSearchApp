@@ -16,7 +16,7 @@ const MovieDetails = () => {
 
   const getMovieDetails = async () => {
     const response = await axios.get(
-      `http://www.omdbapi.com/?apikey=19db09ae&i=${imdbID}`
+      `https://www.omdbapi.com/?apikey=19db09ae&i=${imdbID}`
     );
     setMovieDetails(response.data);
     setLoading(false);

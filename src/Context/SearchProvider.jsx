@@ -20,7 +20,7 @@ const SearchProvider = ({ children }) => {
     try {
       let url = "";
       if (search !== undefined && search !== "") {
-        url = `http://www.omdbapi.com/?apikey=19db09ae&s=${search}&page=${currentPage}`;
+        url = `https://www.omdbapi.com/?apikey=19db09ae&s=${search}&page=${currentPage}`;
         if (filter !== undefined && filter !== "all") {
           url += `&type=${filter}`;
         }
